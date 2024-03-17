@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
 class MyTile extends StatelessWidget {
@@ -39,14 +40,16 @@ class MyTile extends StatelessWidget {
                   onChanged: onChanged,
                   activeColor: Colors.black,
                 ),
-                Text(
-                  text,
-                  style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
-                      decoration: taskcomleted
-                          ? TextDecoration.lineThrough
-                          : TextDecoration.none),
+                Expanded(
+                  child: Text(
+                    text,
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                        decoration: taskcomleted
+                            ? TextDecoration.lineThrough
+                            : TextDecoration.none),
+                  ),
                 ),
               ],
             ),

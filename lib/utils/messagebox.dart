@@ -11,6 +11,8 @@ class MyAlertBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+   
   
     return AlertDialog(
       backgroundColor: Colors.deepPurple,
@@ -22,7 +24,6 @@ class MyAlertBox extends StatelessWidget {
           TextField(
             style: TextStyle(color: Colors.white),
             controller: controller,
-
             decoration: const InputDecoration(
               focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white30)) ,
 
@@ -31,6 +32,7 @@ class MyAlertBox extends StatelessWidget {
               focusColor: Colors.white,
               hintText: 'Add New Task Here',
               hintStyle: TextStyle(color: Colors.white30),
+
 
             ),
 
